@@ -640,19 +640,6 @@ const VisualSettings: React.FC<IVisualSettings> = ({ rendererHandler, csvHandler
                 },
             },
             '-',
-            {
-                key: 'kanaries',
-                label: 'kanaries docs',
-                href: 'https://docs.kanaries.net',
-                // Kanaries brand info is not allowed to be removed or changed unless you are granted with special permission.
-                icon: KanariesIcon,
-                styles: {
-                    icon: {
-                        height: 20,
-                        width: 'auto',
-                    },
-                },
-            },
         ].filter(Boolean) as ToolbarItemProps[];
 
         const items = omitRedundantSeparator(builtInItems.filter((item) => typeof item === 'string' || !exclude.includes(item.key)));
